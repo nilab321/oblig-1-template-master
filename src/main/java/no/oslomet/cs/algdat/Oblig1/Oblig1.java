@@ -16,7 +16,7 @@ public class Oblig1 {
         int maksverdi = a[m];
 
         for( int i = 1; i <a.length; i++){
-            /* */ if(a[i-1]> a[i]){
+             if(a[i-1]> a[i]){
                 int temp = a[i-1];
                 a[i-1]= a[i];
                 a[i] = temp;
@@ -31,7 +31,7 @@ public class Oblig1 {
     public static int ombyttinger(int[] a) {
         if(a ==null)
             throw new NoSuchElementException ("Tabell er tom");
-        int antall = 0;
+        int antall = 0; //teller
         int m = 0;
         int maksverdi = a[m];
 
@@ -46,7 +46,7 @@ public class Oblig1 {
 
             }
         }
-        //}
+
 
         return antall;
     }
