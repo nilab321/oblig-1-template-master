@@ -53,12 +53,44 @@ public class Oblig1 {
 
     ///// Oppgave 2 //////////////////////////////////////
     public static int antallUlikeSortert(int[] a) {
-        throw new UnsupportedOperationException();
+        if (a.length==0){
+            return 0;
+        }
+        int antallUlike=1;
+        for (int i =0; i<a.length-1; i++){
+            if (a[i]>a[i+1]){
+                throw new IllegalStateException("Arrayet er ikke sortert");
+            }
+            else {
+                if (a[i]!=a[i+1]){
+                    antallUlike++;
+                }
+            }
+        }
+        return antallUlike;
     }
 
     ///// Oppgave 3 //////////////////////////////////////
     public static int antallUlikeUsortert(int[] a) {
-        throw new UnsupportedOperationException();
+
+        if (a.length==0){
+            throw new UnsupportedOperationException("tabellen er tom!");
+            return 0;
+        }
+        int antallUlikeSorter=0;
+        for (int i=0; i<a.length; i++){
+            boolean ulike=false;
+            for (int j=0;j<i;j++){
+                if (a[i]==a[j]){
+                    ulike=true;
+                    break;
+                }
+            }
+            if (!ulike){
+                antallUlikeSorter++;
+            }
+        }
+        return antallUlikeSorter;
     }
 
     ///// Oppgave 4 //////////////////////////////////////
