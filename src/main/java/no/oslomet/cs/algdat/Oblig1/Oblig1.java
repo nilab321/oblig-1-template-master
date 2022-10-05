@@ -74,9 +74,9 @@ public class Oblig1 {
     public static int antallUlikeUsortert(int[] a) {
 
         if (a.length==0){
-            throw new UnsupportedOperationException("tabellen er tom!");
-            return 0;
+            System.out.println("tabellen er tom!");
         }
+
         int antallUlikeSorter=0;
         for (int i=0; i<a.length; i++){
             boolean ulike=false;
@@ -187,13 +187,13 @@ public class Oblig1 {
     /// 7a)
     public static String flett(String s, String t) {
         String output="";
-        int n=S1.length()+S2.length();
+        int n=s.length()+t.length();
         for (int i=0; i<n; i++){
-            if (i<S1.length()){
-                output+=S1.charAt(i);
+            if (i<s.length()){
+                output+=s.charAt(i);
             }
-            if (i<S2.length()){
-                output +=S2.charAt(i);
+            if (i<t.length()){
+                output +=t.charAt(i);
             }
         }
         return output;
