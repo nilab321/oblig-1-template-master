@@ -1,6 +1,6 @@
 # Obligatorisk oppgave 1 i Algoritmer og Datastrukturer
 
-# Arbeidsfordeling
+#Arbeidsfordeling
 Nilab sarwari
 studentnr: s362083
 
